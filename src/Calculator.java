@@ -14,14 +14,15 @@ public class Calculator {
             System.out.println("1: basic operations");
             System.out.println("2: calculate area (circle)");
             System.out.println("3: exit");
+            //thinking about more to put here
 
-            int choice = scanner.nextInt(); // Eingabe der Wahl
+            int choice = scanner.nextInt();
 
             if (choice == 1) {
 
                 System.out.println("What operation would you like to perform? ");
                 System.out.println("+, -, /, * ");
-                operation = scanner.next(); // Verwende next() statt nextLine()
+                operation = scanner.next();
 
                 System.out.println("Please enter your first number: ");
                 first = scanner.nextDouble();
@@ -29,6 +30,7 @@ public class Calculator {
                 System.out.println("Please enter your second number: ");
                 second = scanner.nextDouble();
 
+                //for the operations in basic operation
                 switch (operation) {
                     case "+":
                         result = first + second;
@@ -58,16 +60,19 @@ public class Calculator {
                         System.out.println("Invalid operation.");
                 }
 
+                //calculate area of a circle
             } else if (choice == 2) {
                 System.out.println("Please enter the radius: ");
                 double radius = scanner.nextDouble();
                 double area = Math.PI * radius * radius;
                 System.out.println("The area of a circle with a radius of " + radius + " is " + area);
 
+                //close
             } else if (choice == 3) {
                 System.out.println("Ok then, calculate in your head!");
                 break;
 
+                // if the input is not valid
             } else {
                 System.out.println("You have to use one of the numbers I just told you...");
             }
