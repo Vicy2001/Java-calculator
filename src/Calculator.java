@@ -14,6 +14,9 @@ public class Calculator {
             System.out.println("1: basic operations");
             System.out.println("2: calculate area (circle)");
             System.out.println("3: exit");
+			System.out.println("4: sin"); //still missing
+			System.out.println("5: cos"); //still missing
+			System.out.println("6: tan"); //still missing
             //thinking about more to put here
 
             int choice = scanner.nextInt();
