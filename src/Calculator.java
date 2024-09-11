@@ -13,10 +13,11 @@ public class Calculator {
             System.out.println("What would you like to do? Choose one: ");
             System.out.println("1: basic operations");
             System.out.println("2: calculate area (circle)");
-            System.out.println("3: exit");
-			System.out.println("4: sin"); //still missing
-			System.out.println("5: cos"); //still missing
-			System.out.println("6: tan"); //still missing
+            System.out.println("3: exit"); //move to the end when other operations are added
+		
+			System.out.println("4: sin"); //still missing, format needs to be fixed
+			System.out.println("5: cos"); //still missing, format needs to be fixed
+			System.out.println("6: tan"); //still missing, format needs to be fixed
             //thinking about more to put here
 
             int choice = scanner.nextInt();
@@ -69,7 +70,16 @@ public class Calculator {
                 double radius = scanner.nextDouble();
                 double area = Math.PI * radius * radius;
                 System.out.println("The area of a circle with a radius of " + radius + " is " + area);
+/*
+		    } else if (choice == 4) {
+                System.out.println("for calculating sinus please enter: ");
+		double ...
+  		double ...
+                break;
 
+                // if the input is not valid
+            }
+		*/
                 //close
             } else if (choice == 3) {
                 System.out.println("Ok then, calculate in your head!");
