@@ -14,10 +14,10 @@ public class Calculator {
             System.out.println("1: basic operations");
             System.out.println("2: calculate area (circle)");
             System.out.println("3: exit"); //move to the end when other operations are added
-		
-			System.out.println("4: sin"); //still missing, format needs to be fixed
-			System.out.println("5: cos"); //still missing, format needs to be fixed
-			System.out.println("6: tan"); //still missing, format needs to be fixed
+			System.out.println("4: sin"); //move
+
+			System.out.println("5: cos"); //adjacent side/hypothenuse; still missing, format needs to be fixed
+			System.out.println("6: tan"); //opposite side/adjacent side; still missing, format needs to be fixed
             //thinking about more to put here
 
             int choice = scanner.nextInt();
@@ -70,16 +70,17 @@ public class Calculator {
                 double radius = scanner.nextDouble();
                 double area = Math.PI * radius * radius;
                 System.out.println("The area of a circle with a radius of " + radius + " is " + area);
-/*
+
 		    } else if (choice == 4) {
-                System.out.println("for calculating sinus please enter: ");
-		double ...
-  		double ...
+                System.out.println("for calculating sinus please enter the hypothenuse: ");
+		            double hypothenuse =  scanner.nextDouble;
+		        System.out.println("now please enter the opposite side: ");
+  		            double oppositeSide = scanner.nextDouble();
+  		            System.out.println("The sinus is " + oppositeSide/hypothenuse);
                 break;
 
                 // if the input is not valid
             }
-		*/
                 //close
             } else if (choice == 3) {
                 System.out.println("Ok then, calculate in your head!");
