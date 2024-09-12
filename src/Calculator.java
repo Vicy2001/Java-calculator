@@ -13,12 +13,11 @@ public class Calculator {
             System.out.println("What would you like to do? Choose one: ");
             System.out.println("1: basic operations");
             System.out.println("2: calculate area (circle)");
-            System.out.println("3: exit"); //move to the end when other operations are added
-			System.out.println("4: sin"); //move
-
-			System.out.println("5: cos"); //adjacent side/hypothenuse; still missing, format needs to be fixed
-			System.out.println("6: tan"); //opposite side/adjacent side; still missing, format needs to be fixed
-            //thinking about more to put here
+            System.out.println("3: exit"); //needs to be moved to the end
+            System.out.println("4: sin");
+            System.out.println("5: cos");
+            System.out.println("6: tan");
+            // more asap
 
             int choice = scanner.nextInt();
 
@@ -34,7 +33,6 @@ public class Calculator {
                 System.out.println("Please enter your second number: ");
                 second = scanner.nextDouble();
 
-                //for the operations in basic operation
                 switch (operation) {
                     case "+":
                         result = first + second;
@@ -64,29 +62,23 @@ public class Calculator {
                         System.out.println("Invalid operation.");
                 }
 
-                //calculate area of a circle
             } else if (choice == 2) {
                 System.out.println("Please enter the radius: ");
                 double radius = scanner.nextDouble();
                 double area = Math.PI * radius * radius;
                 System.out.println("The area of a circle with a radius of " + radius + " is " + area);
 
-		    } else if (choice == 4) {
-                System.out.println("for calculating sinus please enter the hypothenuse: ");
-		            double hypothenuse =  scanner.nextDouble;
-		        System.out.println("now please enter the opposite side: ");
-  		            double oppositeSide = scanner.nextDouble();
-  		            System.out.println("The sinus is " + oppositeSide/hypothenuse);
-                break;
+            } else if (choice == 4) {
+                System.out.println("For calculating sinus please enter the hypotenuse: ");
+                double hypotenuse = scanner.nextDouble(); // hier den Methodenaufruf korrigiert
+                System.out.println("Now please enter the opposite side: ");
+                double oppositeSide = scanner.nextDouble();
+                System.out.println("The sinus is: " + (oppositeSide / hypotenuse));
 
-                // if the input is not valid
-            }
-                //close
             } else if (choice == 3) {
                 System.out.println("Ok then, calculate in your head!");
                 break;
 
-                // if the input is not valid
             } else {
                 System.out.println("You have to use one of the numbers I just told you...");
             }
